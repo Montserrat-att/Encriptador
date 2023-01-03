@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar y Desencriptar | Alura Challenge 1</title>
+    <link rel="shortcut icon" type="image/svg" href="images/alura.svg">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div class="icono"><img class="logo" src="images/alura.svg" alt="Imagen del la letra a del logo de alura"></div>
+    <div class="content">
+        <div class="encriptado">
+            <textarea class="text" name="input" id="text" cols="25" rows="10" placeholder="Ingrese su texto aqui"></textarea>
+            <p id="warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg> Solo letras minusculas y sin acentos</p>
+
+            
+            <div class="buttons">
+                <button class="encrypt" id="encrypt">Encriptar</button>
+                <button class="decrypt" id="decrypt">Desencriptar</button>
+            </div>
+        </div>
+        <div class="resultadosDiv" id="resultadosDiv">
+            <div id="munheco"> <img class="munheco" src="images/munheco.svg" alt=""></div>
+            <textarea readonly class="result" name="input" id="result" cols="30" rows="2"  placeholder="Ningun mensaje fue encontrado"></textarea>
+            <p id="placeholderText">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Basado en el diseño de <a href="https://www.aluracursos.com/">  Alura Latam <img src="images/alura.svg" alt="Alura logo" width="10px"></a> | Creado por Laura Montserrat Pérez González  |<a href="https://github.com/Montserrat-att" target="_blank"> * Github * </a>
+                <a href="https://www.linkedin.com/in/laura-montserrat-212689258/" target="_blank" > * Linkedin *</a> </a></p> 
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="script/script.js"></script>
+</html>

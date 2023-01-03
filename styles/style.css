@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+picture, video, canvas, audio, iframe, embed, object{
+    display: block;
+    max-width: 100%;
+}
+body {
+    background: #D8DFE8;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+.logo{
+    position: absolute;
+    left: 84px;
+    top: 40px;
+}
+.content{
+    display: flex;
+}
+.encriptado{
+    margin-left: 180px;
+    margin-top: 70px;
+    margin-bottom: 72px;
+}
+.buttons {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+textarea{
+    border: none;
+    resize: none;
+    width: 100%;
+}
+textarea:focus{
+    border: none;
+    outline: none;
+}
+textarea.text::placeholder, .text{
+    color: #0A3871;
+    font-size: 32px;
+}
+textarea.result{
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    word-break: break-word;
+}
+textarea.result::placeholder{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.resultadosDiv {
+    background-color: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    margin: 40px 40px 40px 40px;
+    text-align: center;  
+    height: auto;
+    padding: 40px 25px;
+    word-break: break-word;
+}
+p, textarea.result, textarea.text{
+    background-color: transparent;
+    background-image: none;
+}
+button {
+    border: none;
+    outline: none;
+}
+.encrypt {
+    background: #0A3871;
+    color: #FFF;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.encrypt:hover {
+    background: #105575;
+    border: 2px solid #0A3871;
+    cursor: pointer;
+}
+.decrypt {
+    background: #D8DFE8;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.decrypt:hover, .buttonCopy:hover {
+    background: white;
+    cursor: pointer;
+}
+.buttonCopy:hover{
+    background: #D8DFE8;
+    cursor: pointer;
+}
+.buttonCopy {
+    background-color: #FFF;
+    content:  'Copiar';
+    color: #0A3871;
+    border : 2px solid #0A3871;
+    padding : 24px;
+    gap : 8px;
+    width :328px;
+    height : 67px;
+    border-radius: 24px;
+}
+.buttonCopy::after{
+    content:  'Copiar';
+    color: #0A3871;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 19px;
+    text-align: center;
+}
+@media (max-width: 768px) { /*tablet size*/
+    .content{
+        flex-direction: column;
+    }
+    .encriptado{
+        margin-left: 10vw;
+        margin-top: 20vh;
+        margin-right: 10vw;
+        margin-bottom: 0;
+    }
+    .buttons{
+        flex-direction: row;
+        gap: 16px;
+    }
+    .encrypt{
+        width: 100%;
+    }
+    .decrypt{
+        width: 100%;
+    }
+    .resultadosDiv{
+        height: auto;
+    }
+    #munheco {
+        display: none;
+    }
+    textarea.result{
+        resize: vertical;
+        overflow: auto;
+    }
+    .buttonCopy{
+        width: 100%;
+    }
+    .logo{
+        position: absolute;
+        left: 24px;
+        top: 24px;
+    }
+}
+@media (max-width: 414px) { /*phone size*/
+    .content{
+        flex-direction: column;
+    }
+    .encriptado{
+        margin-left: 10vw;
+        margin-top: 15vh;
+    }
+    .buttons{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .encrypt{
+        width: 100%;
+    }
+    .decrypt{
+        width: 100%;
+    }
+    .resultadosDiv{
+
+        padding-bottom: 50px;
+    }
+    #munheco {
+        display: none;
+    }
+    .buttonCopy{
+        width: 100%;
+    }
+    .logo{
+        position: absolute;
+        left: 24px;
+        top: 24px;
+    }
+}
