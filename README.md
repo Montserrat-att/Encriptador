@@ -1,6 +1,5 @@
 # encrypter-decrypter
 
-[Link a la pagina](https://cerecero.github.io/encrypter-decypher/)
 
 ## Sobre el Challenge
 
